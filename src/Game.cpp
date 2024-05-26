@@ -1,0 +1,5 @@
+/* 
+    Manages Game Loop
+    Coordinate Between different components
+    Handles game state transitions
+*/

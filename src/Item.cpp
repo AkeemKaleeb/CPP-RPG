@@ -1,0 +1,4 @@
+/* 
+    Defines item properties
+    Manages item actions
+*/

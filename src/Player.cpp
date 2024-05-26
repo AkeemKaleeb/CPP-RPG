@@ -1,0 +1,5 @@
+/* 
+    Holds player attributes
+    Manages player inventory and equipment
+    Defines player actions
+*/

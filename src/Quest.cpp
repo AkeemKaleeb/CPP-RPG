@@ -1,0 +1,4 @@
+/* 
+    Tracks player quests and objectives
+    Manages quest progression and rewards
+*/

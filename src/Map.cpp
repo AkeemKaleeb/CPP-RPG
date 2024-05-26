@@ -1,0 +1,5 @@
+/* 
+    Represents the game world layout
+    Manages different locations and transitions between them
+    Stores environmental elements
+*/

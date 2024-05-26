@@ -1,0 +1,4 @@
+/* 
+    Holds enemy attributes
+    Defines enemt behavior and AI
+*/
