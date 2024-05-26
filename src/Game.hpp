@@ -15,4 +15,5 @@ private:
 
     bool running;
     int playerX, playerY;
+    int screenX, screenY;
 };

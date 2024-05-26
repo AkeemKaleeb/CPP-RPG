@@ -18,7 +18,7 @@
 #endif
 
 // Constructor
-Game::Game() : running(true), playerX(5), playerY(5) {
+Game::Game() : running(true), playerX(5), playerY(5), screenX(16), screenY(9) {
     std::cout << "Game Initialized!\n";
 }
 
@@ -84,6 +84,12 @@ void Game::handleInput() {
     tcsetattr(STDIN_FILENO, TCSANOW, &oldt);
     fcntl(STDIN_FILENO, F_SETFL, oldf);
 #endif
+
+    if(playerX > screenX - 1) { playerX = screenX - 1; }
+    else if(playerX < 0) { playerX = 0; }
+
+    if(playerY > screenY - 1) { playerY = screenY - 1; }
+    else if(playerY < 0) { playerY = 0; }
 }
 
 // Update the status of the game
@@ -99,8 +105,8 @@ void Game::render() {
     system("clear");
 #endif
 
-    for(int y = 0; y < 10; y++) {
-        for(int x = 0; x < 10; x++) {
+    for(int y = 0; y < screenY; y++) {
+        for(int x = 0; x < screenX; x++) {
             if(x == playerX && y == playerY) {
                 std::cout << '@';
             }
