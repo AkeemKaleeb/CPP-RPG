@@ -1,4 +1,6 @@
 #pragma once
+#include "Player.hpp"
+#include "Enemy.hpp"
 
 class Game {
 
@@ -16,4 +18,7 @@ private:
     bool running;
     int playerX, playerY;
     int screenX, screenY;
+
+    Player* player;
+    Enemy* enemy;
 };
